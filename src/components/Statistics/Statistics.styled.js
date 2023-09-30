@@ -9,5 +9,5 @@ export const StatiscticItem = styled.li`
   width: 80px;
 
   border-radius: ${(p) => p.theme.border.borderRadius };
-  background-color: ${(p) => p.theme.randomColor()};
+  background-color: ${p => p.color};
 `;

@@ -6,10 +6,10 @@ import { TransactionsHistory } from "./TransactionsHistory/TransactionsHistory";
 import { GlobalStyle } from "./GlobalStyle/GlobalStyle";
 
 
-import user from "../info/user.json"
-import statistics from "../info/data.json"
-import friends from "../info/friends.json"
-import transactions from "../info/transactions.json"
+import user from "../data/user.json"
+import statistics from "../data/data.json"
+import friends from "../data/friends.json"
+import transactions from "../data/transactions.json"
 
 
 export const App = () => {

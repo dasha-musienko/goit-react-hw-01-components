@@ -2,13 +2,15 @@ import { CommonBoldText} from "components/Styles/CommonStyles"
 import { FriendCard, StatusIndicator } from "./FriendListItem.styled"
 
 
-export const FriendListItem = ({avatar, name, isOnline}) => {
+export const FriendListItem = ({avatar, name, isOnline, id}) => {
   return (
-    <FriendCard>
-      <StatusIndicator color={checksStatus(isOnline)}/>
-      <img src={avatar} alt="User avatar" width="48" />
-      <CommonBoldText>{name}</CommonBoldText>
-    </FriendCard>
+    <li key={id}>
+      <FriendCard>
+        <StatusIndicator color={checksStatus(isOnline)}/>
+        <img src={avatar} alt="User avatar" width="48" />
+        <CommonBoldText>{name}</CommonBoldText>
+      </FriendCard>
+    </li>
   )
 }
 

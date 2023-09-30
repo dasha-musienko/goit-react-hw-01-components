@@ -8,9 +8,7 @@ export const FriendList = ({friends}) => {
     <Wrapper>
       <FriendListWrapper>
         {friends.map(({avatar, name, isOnline, id}) => {
-           return <li key={id}>
-            <FriendListItem avatar={avatar} name={name} isOnline={isOnline}/>
-          </li>
+           return <FriendListItem avatar={avatar} name={name} isOnline={isOnline} key={id}/>
         })}
       </FriendListWrapper>
     </Wrapper>
